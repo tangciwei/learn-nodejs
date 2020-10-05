@@ -1,5 +1,5 @@
 message Course {
-    required float id = 1;
+    required float id = 1; // 序号
     required string name = 2;
     repeated Lesson lesson = 3;
 }
