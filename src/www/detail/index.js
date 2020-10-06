@@ -12,7 +12,7 @@ app.use(async (ctx) => {
     if (!ctx.query.columnid) {
         ctx.status = 400;
         ctx.body = 'invalid columnid';
-        return 
+        return
     }
 
     const result = await new Promise((resolve, reject) => {
@@ -25,7 +25,7 @@ app.use(async (ctx) => {
     })
 
     ctx.status = 200;
-    
+
     ctx.body = detailTemplate(result);
 })
 
