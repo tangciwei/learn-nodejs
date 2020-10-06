@@ -24,5 +24,5 @@ app.use(
         ctx.body = fs.readFileSync(`${__dirname}/source/index.htm`, 'utf-8')
     })
 )
-app.listen(3000)
-// module.exports = app;
+// app.listen(3000)
+module.exports = app;

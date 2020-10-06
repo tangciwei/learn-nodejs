@@ -29,16 +29,16 @@ app.use(async (ctx, next)=> {
 })
 
 app.use(
-    mount('/download', require('./1.download/index'))
+    mount('/download', require('./download/index'))
 )
 app.use(
-    mount('/detail', require('./2.detail/index'))
+    mount('/detail', require('./detail/index'))
 )
 app.use(
-    mount('/play', require('./3.play/index'))
+    mount('/play', require('./play/index'))
 )
 app.use(
-    mount('/list', require('./4.list/node/index'))
+    mount('/list', require('./list/node/index'))
 )
 
 app.listen(3000, ()=> {
